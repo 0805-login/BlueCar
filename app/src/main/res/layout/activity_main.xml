@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/bt_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="蓝牙设置"
+        android:background="#CD6C6C"
+        android:layout_alignParentRight="true"/>
+
+          蓝牙与小车通信
+        <TextView
+            android:id="@+id/autoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动模式"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/purple_200"
+            android:layout_below="@+id/autoMode"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            android:id="@+id/stop"
+            android:layout_below="@+id/autoMode"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/purple_200"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            >
+            <TextView
+                android:id="@+id/auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动模式"
+                android:textSize="30sp"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前进"
+                android:layout_below="@+id/auto"
+                android:layout_marginLeft="150dp"
+                android:background="#E686FC"/>
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后退"
+                android:layout_below="@+id/spray"
+                android:layout_marginLeft="150dp"
+                android:background="#8A86FC"/>
+            <Button
+                android:id="@+id/turnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="左转"
+                android:layout_alignTop="@+id/spray"
+                android:layout_marginLeft="60dp"
+                android:background="#86E0FC"
+                />
+            <Button
+                android:id="@+id/turnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="右转"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/spray"
+                android:layout_alignTop="@+id/spray"
+                android:background="#F8FC86"/>
+            <Button
+                android:id="@+id/spray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喷洒"
+                android:layout_below="@+id/go"
+                android:layout_marginLeft="150dp"
+                android:background="#92FC86"/>
+        </RelativeLayout>
+
+
+</RelativeLayout>
